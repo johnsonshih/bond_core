@@ -44,7 +44,7 @@
 const char TOPIC[] = "test_bond_topic";
 std::string genId()
 {
-#ifnde _WIN32
+#ifndef _WIN32
   uuid_t uuid;
   uuid_generate_random(uuid);
   char uuid_str[40];
